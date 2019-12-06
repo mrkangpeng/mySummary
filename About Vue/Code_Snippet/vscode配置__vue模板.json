@@ -1,0 +1,36 @@
+{
+    "Print to console": {
+        "prefix": "vue",
+        "body": [
+            "<template>",
+            "    <div>\n",
+            "    </div>",
+            "</template>\n",
+            "<script>",
+            "export default {",
+            "    props: {\n",
+            "    },",
+            "    data() {",
+            "        return {\n",
+            "        };",
+            "    },",
+            "    computed: {\n",
+            "    },",
+            "    created() {\n",
+            "    },",
+            "    mounted() {\n",
+            "    },",
+            "    watch: {\n",
+            "    },",
+            "    methods: {\n",
+            "    },",
+            "    components: {\n",
+            "    },",
+            "};",
+            "</script>\n",
+            "<style scoped lang=\"${1:stylus}\">\n",
+            "</style>\n",
+        ],
+        "description": "Create vue template"
+    }
+}
