@@ -3,7 +3,7 @@
  * @Autor: kangpeng
  * @Date: 2019-11-26 11:26:20
  * @LastEditors: kangpeng
- * @LastEditTime: 2019-12-09 14:06:01
+ * @LastEditTime: 2019-12-12 18:28:04
  -->
 <template>
   <div class="table_wrap">
@@ -48,7 +48,9 @@ export default {
     // 表头样式
     headerStyle: {
       type: Object,
-      default: { background: "#F9F8F8" }
+      default: () => {
+        return { background: "#F9F8F8" }
+      }
     },
     // 定义table的高度
     tableHeight: {
@@ -85,12 +87,12 @@ export default {
   methods: {
     /**
      * @description: 选中的数组集合
-     * @param {type:Array}
+     * @param {Array}
      * @return: Array
      * @author: kangpeng
      */
     handleSelectionChange(checkedList) {
-      return checkedList;
+      this.$emit('getCheckList',checkedList)
     }
   },
   components: {}
